@@ -1,0 +1,389 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-image: url("r.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+div.container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 20px;
+}
+
+form#registration-form {
+  margin: 0 auto;
+  width: 530px;
+  background: rgba(255, 255, 255, 0);
+  padding: 20px;
+  height: 600px;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.71);
+  /* border-top: 1px solid rgba(255, 255, 255, 0.603); */
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: all;
+}
+
+form#registration-form p {
+  font-weight: 500;
+  color: #ffffff;
+  opacity: 0.7;
+  font-size: 15px;
+  margin-top: 0;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+form#registration-form a {
+  text-decoration: none;
+  color: #f5f2f2;
+  font-size: 12px;
+}
+form#registration-form a:hover {
+  text-shadow: 2px 2px 6px #000;
+}
+
+div.input-group {
+  background: transparent;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+i,
+label,
+p,
+button {
+  background: transparent;
+}
+
+div.input-group i {
+  padding: 3px;
+  color: rgb(255, 255, 255);
+  right: 82px;
+  top: 12px;
+}
+
+div.input-group p {
+  color: red;
+  background: rgba(255, 255, 255, 0);
+  font-size: 15px;
+  margin-top: 0px;
+  visibility: hidden;
+}
+
+input#name,
+#email,
+#usermane,
+#password {
+  margin: 0;
+
+  font-weight: 300;
+}
+
+div.input-group i.fa-check-circle,
+i.fa-exclamation-circle {
+  visibility: hidden;
+  position: absolute;
+}
+
+.success input {
+  border: 3px green solid;
+}
+
+.error input {
+  border: 3px red solid;
+}
+
+div.error p {
+  visibility: visible;
+}
+
+div.success i.fa-check-circle {
+  visibility: visible;
+  color: green;
+  background: #fff;
+  border-radius: 50px;
+}
+
+div.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: red;
+  background: #fff;
+  border-radius: 50px;
+}
+
+input {
+  text-align: left;
+}
+
+h2 {
+  background: transparent;
+  color: #fff;
+}
+
+div.title {
+  background: rgba(255, 255, 255, 0.007);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+form input {
+  background: transparent;
+  width: 320px;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: none;
+  border-left: 3px solid rgba(255, 255, 255, 0.756);
+  border-top: 3px solid rgba(255, 255, 255, 0.363);
+  border-radius: 5000px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-family: monospace, sans-serif;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 4px 4px 60px 8px rgba(255, 255, 255, 0.2);
+}
+
+form button {
+  margin-top: 10px;
+  width: 150px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  border-radius: 50px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(204, 13, 137),
+    rgb(255, 196, 0)
+  );
+}
+
+form button:hover {
+  cursor: pointer;
+  background-color: rgba(9, 198, 147, 0.767);
+  border: 1px solid rgba(0, 128, 94, 0.703);
+}
+
+form button:active {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+form#registration-form :hover {
+  margin: 4px;
+}
+
+::-moz-placeholder {
+  font-family: monospace, sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+::placeholder {
+  font-family: monospace, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.242);
+}
+a,
+h2,
+input:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+
+form#registration-form p a {
+  background: rgba(255, 255, 255, 0.02);
+  font-size: 25px;
+  color: rgb(205, 237, 24);
+  text-shadow: 1px 2px 3px #000000c9;
+}
+
+.drop {
+  background-image: linear-gradient(
+    to bottom right,
+
+    rgb(245, 41, 157),
+    rgb(241, 215, 49)
+  );
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: 5px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 1px 1px 4px rgba(250, 218, 14, 0.998);
+  position: absolute;
+  transition: all 0.3 ease-in-out;
+}
+
+.drop1 {
+  height: 80px;
+  width: 80px;
+  top: -20px;
+  left: -40px;
+  z-index: -1;
+}
+.drop2 {
+  height: 80px;
+  width: 80px;
+  bottom: -30px;
+  right: -10px;
+}
+
+.drop3 {
+  height: 100px;
+  width: 100px;
+  bottom: 120px;
+  right: -50px;
+  z-index: -1;
+}
+
+.drop4 {
+  left: 215px;
+  background-image: url("check.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 130px;
+  width: 130px;
+  bottom: -40px;
+}
+
+.drop5 {
+  height: 60px;
+  width: 60px;
+  bottom: 170px;
+  left: 90px;
+  z-index: -1;
+}
+.drop6 {
+  height: 90px;
+  width: 90px;
+  bottom: 65px;
+  left: -40px;
+}
+
+.drop7 {
+  height: 80px;
+  width: 80px;
+  top: 135px;
+  left: -40px;
+}
+
+div.check {
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0);
+
+  height: 20px;
+}
+input[type="checkbox"] {
+  margin: 0;
+  height: 15px;
+  width: 15px;
+  background-color: initial;
+  cursor: default;
+  appearance: auto;
+  box-sizing: border-box;
+  margin: 3px 3px 3px 4px;
+  padding: initial;
+  border: initial;
+}
+div.check p {
+  font-size: 5px;
+}
+
+.check p span {
+  color: rgb(45, 164, 249);
+  background: transparent;
+}
+
+div.wel {
+  display: flex;
+  align-items: center;
+}
+
+div.pro {
+  margin: 0;
+  width: 550px;
+  background: rgba(255, 255, 255, 0);
+  padding: 20px;
+  height: 350px;
+  border-radius: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.589);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(214, 209, 209, 0.2);
+  position: relative;
+  transition: all;
+}
+
+h1 {
+  background: transparent;
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(235, 224, 8);
+  text-shadow: 2px 4px 6px #000;
+}
+
+h3 {
+  background: transparent;
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(237, 237, 237);
+  text-align: 1px 2px 4px #000;
+}
+
+@media screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    background-image: url("r.jpg");
+    background-position: center;
+    background-size: 1000px 1700px;
+  }
+
+  body {
+    background-image: linear-gradient(
+      to bottom right,
+      rgb(194, 60, 125),
+      rgb(255, 204, 0)
+    );
+  }
+
+  form#registration-form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 18px;
+  }
+
+  form input {
+    width: 230px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 1106px) and (min-width: 601px) {
+  * {
+    margin: 0;
+    padding: 0;
+    background-image: url("r.jpg");
+    background-position: center;
+    background-size: 1200px 2000px;
+  }
+}

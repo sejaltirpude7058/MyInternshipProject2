@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <!-- Link the CSS file -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form
+        id="registration-form"
+        action="welcome.html"
+        name="myform"
+        onsubmit="return validateForm()"
+        method="GET"
+      >
+        <div class="title">
+          <h2>Register Here</h2>
+        </div>
+        <div class="input-group">
+          <!-- <label for="name">Name</label> -->
+          <i class="fas fa-solid fa-user-pen"></i>
+          <input
+            type="text"
+            id="name"
+            placeholder=" Your full Name"
+            name="name"
+          />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <p>error</p>
+        </div>
+
+        <div class="input-group">
+          <!-- <label for="email">Email</label> -->
+          <i class="fas fa-solid fa-envelope"></i>
+          <input
+            type="email"
+            id="email"
+            placeholder="Your Email Address"
+            name="email"
+          />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <p>error</p>
+        </div>
+
+        <div class="input-group">
+          <!-- <label for="username">Username</label> -->
+          <i class="fas fa-light fa-user"></i>
+          <input
+            type="username"
+            id="username"
+            placeholder=" Your Username"
+            name="username"
+          />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <p>error</p>
+        </div>
+
+        <div class="input-group">
+          <!-- <label for="password">Password</label> -->
+          <i class="fas fa-solid fa-lock"></i>
+          <input
+            type="password"
+            id="password"
+            placeholder="Your Password"
+            name="password"
+          />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <p>error</p>
+        </div>
+        <div class="input-group">
+          <!-- <label for="password">Confirm Password</label> -->
+          <i class="fas fa-light fa-square-check"></i>
+          <input
+            type="password"
+            id="confirm-password"
+            placeholder="Retype Your Password"
+            name="confirmpassword"
+          />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <p>error</p>
+        </div>
+
+        <div class="check">
+          <input type="checkbox" class="checkbox" />
+          <p>
+            I agree the <span>Terms </span>and <span>Privacy Policy</span> of
+            ABC
+          </p>
+        </div>
+        <button type="submit" id="welcome">Submit</button>
+        <p>Already have an account? <a href="#">Sign in!</a></p>
+      </form>
+      <!-- <div class="drops">
+        <div class="drop drop1"></div>
+        <div class="drop drop2"></div>
+        <div class="drop drop3"></div>
+        <div class="drop drop4"></div>
+        <div class="drop drop5"></div>
+        <div class="drop drop6"></div>
+        <div class="drop drop7"></div>
+      </div>
+    </div> -->
+    <!-- Link the JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
